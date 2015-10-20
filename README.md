@@ -6,7 +6,7 @@
 example link [GMIT] (http://www.gmit.ie)
 
 
-```
+```js
 
 int funtion(val)
 {
