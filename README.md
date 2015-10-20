@@ -1,7 +1,15 @@
 # Data Representation Project
 
-**Student:** Ciaran Whyte
-*Student ID:* G00254624
+**Student:** Ciaran Whyte </br>
+**Student ID:** G00254624 </br>
+**Lecturer:** Ian McLoughlin </br>
+**Module:** Data Representation and Querying </br>
+
+
+
+
+
+
 
 example link [GMIT] (http://www.gmit.ie)
 
