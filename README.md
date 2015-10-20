@@ -12,10 +12,6 @@ This project was designed as part of a Data Representation module. In the projec
 ##The Data Set
 The data set i will be using contains data about the variety of public parks located around Galway city. Exercise is vital today for good health from both a physical and mental perspective. Therefore i find it very important that people should be aware of the different facilities they have in their local area. Currently this data set contains 29 rows for all the parks in Galway city but this could be expanded to contain all the parks in the country, province or country. It also would not have to just be for parks, it could also contain gyms, sport pitches etc. The main concept of this being all about exercise and awareness of public facilities. The data set contains different information about each park. It is in CSV file format and has key values such as the parks name, location, geograpic location, its facilities and more. If you wish to view the actual dataset you can download it here: [Parks In Galway City] (http://opendata.galwaycity.opendata.arcgis.com/datasets/683ff500430447c985f4775a6b5dd112_0.csv)
 
-
-example link [GMIT] (http://www.gmit.ie)
-
-
 ```js
 
 int funtion(val)
