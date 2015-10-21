@@ -24,7 +24,7 @@ DELETE | Description
 
 ##**The URLs**
 
-###**List of availible parks by city location**
+###**List of available parks by city location**
 
-###**List of availible parks by the facilities they possess**
+###**List of available parks by the facilities they possess**
 
