@@ -14,6 +14,11 @@ The data set i will be using contains data about the variety of public parks loc
 
 ##**Common HTTP Methods and a brief description**
 
+HTTP Method | Description
+------------ | -------------
+GET | Description
+POST | Description
+
 ##**The URLs**
 
 ###**List of availible parks by city location**
