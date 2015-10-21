@@ -16,11 +16,11 @@ The data set i will be using contains data about the variety of public parks loc
 
 HTTP Method | Description
 ------------ | -------------
-GET | The GET method means retrieve whatever information is identified by the Request-URL. If the Request-URL refers to a data-producing process the produced data will be returned as the object in the response.
+GET | The GET method means retrieve whatever information is identified by the Request-URI. If the Request-URI refers to a data-producing process the produced data will be returned as the object in the response.
 POST | The POST method is used to send data to the server
 HEAD | The HEAD method is very similar to the GET method in what it does. The main difference being it only returns the response header.
-PUT | Description
-DELETE | Description
+PUT | Sets the data in the URI to that of the requested data
+DELETE | Deletes the data at the URI
 
 ##**The URLs**
 
