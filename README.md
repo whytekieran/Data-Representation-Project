@@ -24,7 +24,7 @@ DELETE | Deletes the data at the URI
 
 ##**The URLs**
 
-###**List of available parks by city location**
+1. ###**List of available parks by city location**
 The following URL provides a list of all the parks in a given location.
 
 **_THE URL:_** *galwayparks.com/location/(location)*
