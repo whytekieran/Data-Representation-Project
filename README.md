@@ -14,7 +14,7 @@ The data set i will be using contains data about the variety of public parks loc
 
 ##**Common HTTP Methods and a brief description**
 
-HTTP Method | Description
+HTTP MEDHOD | DESCRIPTION
 ------------ | -------------
 GET | The GET method means retrieve whatever information is identified by the Request-URI. If the Request-URI refers to a data-producing process the produced data will be returned as the object in the response.
 POST | The POST method is used to send data to the server
@@ -37,9 +37,12 @@ This would return a list of of all the parks in galway city that are located in 
 useful information.
 
 The data returned from this URL will be in JSON (Javascript Object Notation) format, with the following data for each park:
-       * **_NAME:_** The name of the park.
-       * **_LOCATION:_** The location of the park, contains information like the street name.
-       * **_FACILITIES:_**
+      
+      PROPERTY | DESCRIPTION
+      ------------ | -------------
+       NAME | The name of the park.
+       LOCATION | The location of the park, contains information like the street name.
+       FACILITIES | a description
 
 An example of a response would be:
 
