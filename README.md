@@ -23,8 +23,6 @@ PUT | Sets the data in the URI to that of the requested data
 DELETE | Deletes the data at the URI
 
 ##**The URLs**
-
-1.
 ###**List of available parks by city location**
 The following URL provides a list of all the parks in a given location.
 
