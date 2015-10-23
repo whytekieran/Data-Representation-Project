@@ -25,6 +25,25 @@ DELETE | Deletes the data at the URI
 ##**The URLs**
 
 ###**List of available parks by city location**
+The following URL provides a list of all the parks in a given location.
+
+**_THE URL:_** _http://galwayparks.com/location/(location)_
+The (location) represents the part of the URL being replaced depending on which information is provided.
+
+**_METHOD:_** GET (The HTTP GET method is used for retrieving this information
+
+**_EXAMPLE:_** _http://galwayparks.com/location/(Shantalla)*_
+This would return a list of of all the parks in galway city that are located in Shantalla, along with some other 
+useful information.
+
+**The data returned from this URL will be in JSON (Javascript Object Notation) format, with the following data for each park:**
+       - **_NAME:_** The name of the park.
+       - **_LOCATION:_** The location of the park, contains inforamtion like the street name.
+       - **_FACILITIES:_**
+An example of a response would be:
+    ```json
+    
+    ```
 
 ###**List of available parks by the facilities they possess**
 
