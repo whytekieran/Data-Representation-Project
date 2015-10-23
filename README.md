@@ -86,7 +86,6 @@ This wwill return a list of of all the parks in galway city that have tennis cou
 An example of the json response would be:
  ```json
     [{"LOCATION": "Seamus Quirke Road, Shantalla", 
-    "FACILITIES": ["1 Soccer/ Gaa Playing Pitch", "Planting area with flowers", "shrubs and trees"]}, 
-    {"DESCRIPTION": "Local Neighbourhood Park"}]
+    "FACILITIES": ["1 Soccer/ Gaa Playing Pitch", "Planting area with flowers", "shrubs and trees"]}]
  ```
 
