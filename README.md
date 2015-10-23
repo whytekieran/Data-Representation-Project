@@ -32,7 +32,7 @@ The (location) represents the part of the URL being replaced depending on which 
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information
 
-**_EXAMPLE:_** *http://galwayparks.com/location/(Shantalla)*
+**_EXAMPLE:_** (http://galwayparks.com/location/(Shantalla))
 This would return a list of of all the parks in galway city that are located in Shantalla, along with some other 
 useful information.
 
@@ -41,9 +41,6 @@ useful information.
        - **_LOCATION:_** The location of the park, contains inforamtion like the street name.
        - **_FACILITIES:_**
 An example of a response would be:
-    ```json
-    
-    ```
 
 ###**List of available parks by the facilities they possess**
 
