@@ -27,7 +27,7 @@ Much of the Javascript that we write to handle these URL is written with a libra
 JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example,
  
 ```javascript
- var url = urlWithSomething/file/someData";
+ var url = "urlWithSomething/file/someData";
   $.get( url, function(data1){ //We can use JQuery.get() to retrieve data from the URL
     var url1 = urlWithSomethingMoreSpecific/file/someData"
      $.get(url1, function(data2){
