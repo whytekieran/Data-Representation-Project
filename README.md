@@ -45,9 +45,9 @@ The data returned from this URL will be in JSON (Javascript Object Notation) for
        DESCRIPTION | A brief description of the park
 
 An example of a response would be:
- ```json
+ ```javascript
     [ {"NAME": "Shantalla Park", "LOCATION": "Seamus Quirke Road, Shantalla", ...}, {...}, ...]
-    ```
+ ```
 
 ###**List of available parks by the facilities they possess**
 
