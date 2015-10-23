@@ -29,7 +29,7 @@ The following URL provides a list of all the parks in a given location.
 **_THE URL:_** *galwayparks.com/location/(location)*
 The (location) represents the part of the URL being replaced depending on which information is provided.
 
-**_METHOD:_** GET (The HTTP GET method is used for retrieving this information
+**_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
 **_EXAMPLE:_** galwayparks.com/location/(Shantalla)
 This would return a list of of all the parks in galway city that are located in Shantalla, along with some other 
@@ -41,9 +41,13 @@ The data returned from this URL will be in JSON (Javascript Object Notation) for
       ------------ | -------------
        NAME | The name of the park.
        LOCATION | The location of the park, contains information like the street name.
-       FACILITIES | a description
+       FACILITIES | The different facilities that are available at the park
+       DESCRIPTION | A brief description of the park
 
 An example of a response would be:
+ ```json
+    [ {"NAME": "Shantalla Park", "LOCATION": "Seamus Quirke Road, Shantalla", ...}, {...}, ...]
+    ```
 
 ###**List of available parks by the facilities they possess**
 
