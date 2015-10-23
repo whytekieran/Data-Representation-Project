@@ -34,6 +34,8 @@ JQuery is sometimes donated by using the $ sign. JQuery contains functions which
        console.log(data2.id); //Output the data to the console, the data can come in many different models, eg XML, JSON
         $('#hn').html(data2.id); //Using another JQuery method .html() to get a handle on a DOM object
      });
+     console.log(data);
+});
 ```
 
 ###**List of available parks by city location**
