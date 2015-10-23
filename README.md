@@ -23,7 +23,7 @@ PUT | Sets the data in the URI to that of the requested data
 DELETE | Deletes the data at the URI
 
 ##**The URLs**
-Much of the Javascript that we write to handle these URL is written with a library of Javascript we call JQuery
+Much of the Javascript that we write to handle these URLs is written with a library called Javascript we call JQuery.
 JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example,
  
 ```javascript
