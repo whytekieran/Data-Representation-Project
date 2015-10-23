@@ -23,7 +23,7 @@ PUT | Sets the data in the URI to that of the requested data
 DELETE | Deletes the data at the URI
 
 ##**The URLs**
-Much of the Javascript that we write to handle these URLs is written with a library called Javascript we call JQuery.
+Much of the Javascript that we write to handle these URLs is written with a library in Javascript we call JQuery.
 JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example,
  
 ```javascript
@@ -39,7 +39,7 @@ JQuery is sometimes donated by using the $ sign. JQuery contains functions which
 ```
 
 ###**List of available parks by city location**
-The following URL provides a list of all the parks in a given location.
+The following URL provides a list of all the Galway parks in a given location.
 
 **_THE URL:_** *galwayparks.com/location/(location)* </br>
 The (location) represents the part of the URL being replaced depending on which information is provided.
@@ -75,7 +75,7 @@ The (facilities) represents the part of the URL being replaced depending on whic
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
-**_EXAMPLE:_** galwayparks.com/facilities/(TennisCourts) </br>
+**_EXAMPLE:_** galwayparks.com/facilities/(tenniscourts) </br>
 This wwill return a list of of all the parks in galway city that have tennis courts, along with other data.
 
       PROPERTY | DESCRIPTION
