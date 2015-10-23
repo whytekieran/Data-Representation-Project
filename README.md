@@ -23,6 +23,19 @@ PUT | Sets the data in the URI to that of the requested data
 DELETE | Deletes the data at the URI
 
 ##**The URLs**
+Much of the Javascript that we write to handle these URL is written with a library of Javascript we call JQuery
+JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example,
+ 
+ ```json 
+ var url = urlWithSomething/file/someData";
+      $.get( url, function(data1) { //We can use JQuery.get() to retrieve data from the URL
+           var url1 = urlWithSomethingMoreSpecific/file/someData"
+          $.get(url1, function(data2){
+             console.log(data2.id);//Output the data to the console, the data can come in many different models, eg XML, JSON
+              $('#hn').html(data2.id);//Using another JQuery method .html() to get a handle on a DOM object
+          });
+ ```
+
 ###**List of available parks by city location**
 The following URL provides a list of all the parks in a given location.
 
@@ -44,7 +57,7 @@ The data returned from this URL will be in JSON (Javascript Object Notation) for
        FACILITIES | The different facilities that are available at the park
        DESCRIPTION | A brief description of the park
 
-An example of a response would be:
+An example of the json response would be:
  ```json
     [{"NAME": "Shantalla Park", 
     "LOCATION": "Seamus Quirke Road, Shantalla", 
@@ -53,4 +66,15 @@ An example of a response would be:
  ```
 
 ###**List of available parks by the facilities they possess**
+The following URL provides a list of all the parks depending on the facilities the have.
+
+**_THE URL:_** *galwayparks.com/facilities/(facilities)* </br>
+The (facilities) represents the part of the URL being replaced depending on which information is provided.
+
+**_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
+
+**_EXAMPLE:_** galwayparks.com/facilities/(TennisCourts) </br>
+This wwill return a list of of all the parks in galway city that have tennis courts, along with other data.
+
+
 
