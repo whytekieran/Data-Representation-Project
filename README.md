@@ -29,7 +29,7 @@ JQuery is sometimes donated by using the $ sign. JQuery contains functions which
 ```javascript
  var url = "urlWithSomething/file/someData";
   $.get( url, function(data1){ //We can use JQuery.get() to retrieve data from the URL
-    var url1 = urlWithSomethingMoreSpecific/file/someData"
+    var url1 = "urlWithSomethingMoreSpecific/file/someData";
      $.get(url1, function(data2){
        console.log(data2.id); //Output the data to the console, the data can come in many different models, eg XML, JSON
         $('#hn').html(data2.id); //Using another JQuery method .html() to get a handle on a DOM object
