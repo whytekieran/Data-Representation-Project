@@ -26,15 +26,15 @@ DELETE | Deletes the data at the URI
 Much of the Javascript that we write to handle these URL is written with a library of Javascript we call JQuery
 JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example,
  
- ```json 
+```json 
  var url = urlWithSomething/file/someData";
-      $.get( url, function(data1) { //We can use JQuery.get() to retrieve data from the URL
-           var url1 = urlWithSomethingMoreSpecific/file/someData"
-          $.get(url1, function(data2){
-             console.log(data2.id);//Output the data to the console, the data can come in many different models, eg XML, JSON
-              $('#hn').html(data2.id);//Using another JQuery method .html() to get a handle on a DOM object
-          });
- ```
+  $.get( url, function(data1) { //We can use JQuery.get() to retrieve data from the URL
+    var url1 = urlWithSomethingMoreSpecific/file/someData"
+     $.get(url1, function(data2){
+       console.log(data2.id);//Output the data to the console, the data can come in many different models, eg XML, JSON
+        $('#hn').html(data2.id);//Using another JQuery method .html() to get a handle on a DOM object
+     });
+```
 
 ###**List of available parks by city location**
 The following URL provides a list of all the parks in a given location.
