@@ -46,7 +46,10 @@ The data returned from this URL will be in JSON (Javascript Object Notation) for
 
 An example of a response would be:
  ```json
-    [{"NAME": "Shantalla Park", "LOCATION": "Seamus Quirke Road, Shantalla", "FACILITIES": ["1 Soccer/ Gaa Playing Pitch", "Planting area with flowers", "shrubs and trees"]}, {"DESCRIPTION": "Local Neighbourhood Park"}]
+    [{"NAME": "Shantalla Park", 
+    "LOCATION": "Seamus Quirke Road, Shantalla", 
+    "FACILITIES": ["1 Soccer/ Gaa Playing Pitch", "Planting area with flowers", "shrubs and trees"]}, 
+    {"DESCRIPTION": "Local Neighbourhood Park"}]
  ```
 
 ###**List of available parks by the facilities they possess**
