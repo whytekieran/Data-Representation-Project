@@ -63,8 +63,8 @@ An example of the json response would be:
  ```json
     [{"NAME": "Shantalla Park", 
     "LOCATION": "Seamus Quirke Road, Shantalla", 
-    "FACILITIES": ["1 Soccer/ Gaa Playing Pitch", "Planting area with flowers", "shrubs and trees"]}, 
-    {"DESCRIPTION": "Local Neighbourhood Park"}]
+    "FACILITIES": ["1 Soccer/ Gaa Playing Pitch", "Planting area with flowers", "shrubs and trees"], 
+    "DESCRIPTION": "Local Neighbourhood Park"}]
  ```
 
 ###**List of available parks by the facilities they possess**
@@ -78,5 +78,15 @@ The (facilities) represents the part of the URL being replaced depending on whic
 **_EXAMPLE:_** galwayparks.com/facilities/(TennisCourts) </br>
 This wwill return a list of of all the parks in galway city that have tennis courts, along with other data.
 
+      PROPERTY | DESCRIPTION
+      ------------ | ------------
+       LOCATION | The location of the park, contains information like the street name.
+       FACILITIES | The different facilities that are available at the park
 
+An example of the json response would be:
+ ```json
+    [{"LOCATION": "Seamus Quirke Road, Shantalla", 
+    "FACILITIES": ["1 Soccer/ Gaa Playing Pitch", "Planting area with flowers", "shrubs and trees"]}, 
+    {"DESCRIPTION": "Local Neighbourhood Park"}]
+ ```
 
