@@ -32,7 +32,7 @@ The (location) represents the part of the URL being replaced depending on which 
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information
 
-**_EXAMPLE:_** (http://galwayparks.com/location/(Shantalla))
+**_EXAMPLE:_** galwayparks.com/location/(Shantalla)
 This would return a list of of all the parks in galway city that are located in Shantalla, along with some other 
 useful information.
 
