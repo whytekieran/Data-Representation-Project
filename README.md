@@ -27,12 +27,12 @@ DELETE | Deletes the data at the URI
 ###**List of available parks by city location**
 The following URL provides a list of all the parks in a given location.
 
-**_THE URL:_** _http://galwayparks.com/location/(location)_
+**_THE URL:_** *http://galwayparks.com/location/(location)*
 The (location) represents the part of the URL being replaced depending on which information is provided.
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information
 
-**_EXAMPLE:_** _http://galwayparks.com/location/(Shantalla)*_
+**_EXAMPLE:_** *http://galwayparks.com/location/(Shantalla)*
 This would return a list of of all the parks in galway city that are located in Shantalla, along with some other 
 useful information.
 
