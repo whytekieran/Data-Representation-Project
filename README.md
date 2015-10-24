@@ -40,7 +40,7 @@ JQuery is sometimes donated by using the $ sign. JQuery contains functions which
 ###**Entering the site**###
 On entering the site, if your a member you may need to provide some authentication details. The following is an example
 
- ```html
+ ```
    POST /entry/login_form.htm HTTP/1.1
    Host: GalwayParks.com
    user=value1&password=value2
