@@ -90,5 +90,5 @@ An example of the json response would be:
     "FACILITIES": ["1 Soccer/ Gaa Playing Pitch", "Planting area with flowers", "shrubs and trees"]}]
  ```
  
- The example above is an example of a single json object (park) returned by the URL. We can have many of these objects, each of these objects inside another json object. This makes json a very powerful language in data transfer.
+ The code above is an example of a single json object (park) returned by the URL. We can have many of these objects, each of these objects inside another json object. This makes json a very powerful language in data transfer.
 
