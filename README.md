@@ -17,7 +17,7 @@ The data set i will be using contains data about the variety of public parks loc
 HTTP MEDHOD | DESCRIPTION
 ------------ | -------------
 GET | The GET method means retrieve whatever information is identified by the Request-URI. If the Request-URI refers to a data-producing process the produced data will be returned as the object in the response.
-POST | The POST method is used to send data to the server
+POST | The POST method is used to send data to the server. The actual function that the POST method performs is determined by the server and is most likely dependent on the URL.
 HEAD | The HEAD method is very similar to the GET method in what it does. The main difference being it only returns the response header.
 PUT | Sets the data in the URI to that of the requested data
 DELETE | Deletes the data at the URI
@@ -37,6 +37,17 @@ JQuery is sometimes donated by using the $ sign. JQuery contains functions which
      console.log(data); //Output less specific data to the console
 });
 ```
+###**Entering the site**###
+On entering the site, if your a member you may need to provide some authentication details. The following is an example
+
+```html
+POST /entry/login_form.htm HTTP/1.1
+Host: GalwayParks.com
+user=value1&password=value2
+```
+**_METHOD:_** POST (The HTTP POST method is used for retrieving this information, as you can see in the first line of the HTTP message body we say POST. This information is sensitive and therefore would not be sent in the URL.)
+
+**_THE URL:_** *galwayparks.com/location/(location)* </br>
 
 ###**List of available parks by city location**
 The following URL provides a list of all the Galway parks in a given location.
@@ -83,6 +94,7 @@ This wwill return a list of of all the parks in galway city that have tennis cou
        NAME | The name of the park
        LOCATION | The location of the park, contains information like the street name.
        FACILITIES | The different facilities that are available at the park
+
 An example of the json response would be:
  ```json
     [{"NAME": "Westside Park",
