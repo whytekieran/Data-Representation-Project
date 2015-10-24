@@ -45,7 +45,7 @@ On entering the site, if your a member you may need to provide some authenticati
    Host: GalwayParks.com
    user=value1&password=value2
  ```
-**_METHOD:_** POST (The HTTP POST method is used for retrieving this information, as you can see in the first line of the HTTP message body we say POST. This information is sensitive and therefore would not be sent in the URL.)
+**_METHOD:_** POST (The HTTP POST method is used for sending this information, as you can see in the first line of the HTTP message body we say POST. The last line refers to the information we are sending. This information is sensitive and therefore would not be sent in the URL, which is why we use the POST method.)
 
 ###**List of available parks by city location**
 The following URL provides a list of all the Galway parks in a given location.
