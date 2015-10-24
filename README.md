@@ -47,8 +47,6 @@ user=value1&password=value2
 ```
 **_METHOD:_** POST (The HTTP POST method is used for retrieving this information, as you can see in the first line of the HTTP message body we say POST. This information is sensitive and therefore would not be sent in the URL.)
 
-**_THE URL:_** *galwayparks.com/location/(location)* </br>
-
 ###**List of available parks by city location**
 The following URL provides a list of all the Galway parks in a given location.
 
