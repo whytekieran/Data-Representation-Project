@@ -40,10 +40,10 @@ JQuery is sometimes donated by using the $ sign. JQuery contains functions which
 ###**Entering the site**###
 On entering the site, if your a member you may need to provide some authentication details. The following is an example
 
- ```html
+ ```HTML
     POST /entry/login_form.htm HTTP/1.1
     Host: GalwayParks.com
-    user=value1 & password=value2
+    user=value1&password=value2
  ```
 **_METHOD:_** POST (The HTTP POST method is used for retrieving this information, as you can see in the first line of the HTTP message body we say POST. This information is sensitive and therefore would not be sent in the URL.)
 
