@@ -80,12 +80,15 @@ This wwill return a list of of all the parks in galway city that have tennis cou
 
       PROPERTY | DESCRIPTION
       ------------ | ------------
+       NAME | The name of the park
        LOCATION | The location of the park, contains information like the street name.
        FACILITIES | The different facilities that are available at the park
-
 An example of the json response would be:
  ```json
-    [{"LOCATION": "Seamus Quirke Road, Shantalla", 
+    [{"NAME": "Westside Park",
+    "LOCATION": "Seamus Quirke Road, Newcastle, Galway", 
     "FACILITIES": ["1 Soccer/ Gaa Playing Pitch", "Planting area with flowers", "shrubs and trees"]}]
  ```
+ 
+ The example above is an example of a single json object (park) returned by the URL. We can have many of these objects, each of these objects inside another json object. This makes json a very powerful language in data transfer.
 
