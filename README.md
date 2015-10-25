@@ -47,7 +47,7 @@ On entering the site, if your a member you may need to provide some authenticati
  ```
 **_METHOD:_** POST (The HTTP POST method is used for sending this information, as you can see in the first line of the HTTP message body we say POST. The last line refers to the information we are sending. This information is sensitive and therefore would not be sent in the URL, which is why we use the POST method.)
 
-### _**List of available parks by general city area (East, West etc)**_
+### 2. _**List of available parks by general city area (East, West etc)**_
 The following URL provides a list of all the Galway parks in a general area. People dont always know the names of their specific sourrounding areas. This allows for a general search.
 
 **_THE URL:_** *galwayparks.com/area/(area)* </br>
@@ -78,7 +78,7 @@ An example of the json response would be:
     "OPENING HOURS": "No restricted opening hours"}]
  ```
 
-### _**List of available parks by city location**_
+### 3. _**List of available parks by city location**_
 The following URL provides a list of all the Galway parks in a given location. This provides a more specific search than the previous and is based on locations in the city.
 
 **_THE URL:_** *galwayparks.com/location/(location)* </br>
@@ -107,7 +107,7 @@ An example of the json response would be:
     "DESCRIPTION": "Local Neighbourhood Park"}]
  ```
 
-### _**List of available parks by the facilities they possess**_
+### 4. _**List of available parks by the facilities they possess**_
 The following URL provides a list of all the parks depending on the facilities the have.
 
 **_THE URL:_** *galwayparks.com/facilities/(facilities)* </br>
