@@ -85,7 +85,7 @@ The (facilities) represents the part of the URL being replaced depending on whic
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
 **_EXAMPLE:_** galwayparks.com/facilities/(tenniscourts) </br>
-This wwill return a list of of all the parks in galway city that have tennis courts, along with other data.
+This will return a list of of all the parks in galway city that have tennis courts, along with other data.
 
       PROPERTY | DESCRIPTION
       ------------ | ------------
@@ -97,7 +97,7 @@ An example of the json response would be:
  ```json
     [{"NAME": "Westside Park",
     "LOCATION": "Seamus Quirke Road, Newcastle, Galway", 
-    "FACILITIES": ["1 Soccer/ Gaa Playing Pitch", "Planting area with flowers", "shrubs and trees"]}]
+    "FACILITIES": ["2 Gaelic/ 2 Soccer Playing Pitches", "Basketball Court", "Tennis Courts", "Dressing Rooms", "Running  Track", "Skatepark"]}]
  ```
  
  The code above is an example of a single json object (park) returned by the URL. We can have many of these objects, each of these objects can then be stored inside another json object. This makes json a very powerful language in data transfer.
