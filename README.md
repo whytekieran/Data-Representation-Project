@@ -5,7 +5,7 @@
 **Module:** Data Representation and Querying </br>
 
 
-##**Introduction**
+##_**Introduction**_
 
 This project was designed as part of a Data Representation module. In the project I have to design an API for a data set, not implement it. I will be designing the URLs for querying a particular data set for useful information, keeping in mind the needs of the users that will use the API. These datasets are located at [Data.Gov.ie] (https://data.gov.ie/data) The API will be provided through HTTP. Each of the URLs will be described in detail explaining certain points like what kind of data will be returned from the URL and what kind of HTTP method(s) are being used.
 
@@ -53,7 +53,11 @@ The following URL provides a list of all the Galway parks in a general area. Peo
 **_THE URL:_** *galwayparks.com/area/(area)* </br>
 The (area) represents the part of the URL being replaced depending on which area is provided.
 
-//description
+**_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
+
+**_EXAMPLE:_** galwayparks.com/area/(west) </br>
+This would return a list of of all the parks in galway city that are located in the west of the city, along with some other 
+useful information.
 
 ###**List of available parks by city location**
 The following URL provides a list of all the Galway parks in a given location. This provides a more specific search than the previous and is based on locations in the city.
