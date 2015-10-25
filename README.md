@@ -47,15 +47,19 @@ On entering the site, if your a member you may need to provide some authenticati
  ```
 **_METHOD:_** POST (The HTTP POST method is used for sending this information, as you can see in the first line of the HTTP message body we say POST. The last line refers to the information we are sending. This information is sensitive and therefore would not be sent in the URL, which is why we use the POST method.)
 
-###**List of available parks by general city area eg East, West etc**
+###**List of available parks by general city area (East, West etc)**
+The following URL provides a list of all the Galway parks in a general area. People dont always know the names of their specific sourrounding areas. This allows for a general search.
+
+**_THE URL:_** *galwayparks.com/area/(area)* </br>
+The (area) represents the part of the URL being replaced depending on which area is provided.
 
 //description
 
 ###**List of available parks by city location**
-The following URL provides a list of all the Galway parks in a given location.
+The following URL provides a list of all the Galway parks in a given location. This provides a more specific search than the previous and is based on locations in the city.
 
 **_THE URL:_** *galwayparks.com/location/(location)* </br>
-The (location) represents the part of the URL being replaced depending on which information is provided.
+The (location) represents the part of the URL being replaced depending on the location data that is being provided in the URL.
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
