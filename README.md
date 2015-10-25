@@ -14,7 +14,7 @@ The data set i will be using contains data about the variety of public parks loc
 
 ## _**Common HTTP Methods and a brief description**_
 
-**HTTP MEDHOD** | **DESCRIPTION**
+**HTTP METHOD** | **DESCRIPTION**
 ------------ | -------------
 GET | The GET method means retrieve whatever information is identified by the Request-URI. If the Request-URI refers to a data-producing process the produced data will be returned as the object in the response.
 POST | The POST method is used to send data to the server. The actual function that the POST method performs is determined by the server and is most likely dependent on the URL.
@@ -55,9 +55,28 @@ The (area) represents the part of the URL being replaced depending on which area
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
-**_EXAMPLE:_** galwayparks.com/area/(west) </br>
-This would return a list of of all the parks in galway city that are located in the west of the city, along with some other 
+**_EXAMPLE:_** galwayparks.com/area/(east) </br>
+This would return a list of of all the parks in galway city that are located in the east of the city, along with some other 
 useful information.
+
+The data returned from this URL will be in JSON (Javascript Object Notation) format, with the following data for each park:
+      
+      **PROPERTY** | **DESCRIPTION**
+      ------------ | -------------
+       NAME | The name of the park.
+       LOCATION | The location of the park, contains information like the street name.
+       AREA | The area of the city in which te park is located
+       FACILITIES | The different facilities that are available at the park
+       OPENING HOURS | The opening hours for the park
+
+An example of the json response would be:
+ ```json
+    [{"NAME": "Renmore Park", 
+    "LOCATION": "Renmore, Galway",
+    "AREA": "City-East"
+    "FACILITIES": ["2 Gaelic Playing Pitches, 2 Soccer Playing Pitches", "Planting areas with flowers, shrubs, trees"], 
+    "OPENING HOURS": "No restricted opening hours"}]
+ ```
 
 ### _**List of available parks by city location**_
 The following URL provides a list of all the Galway parks in a given location. This provides a more specific search than the previous and is based on locations in the city.
