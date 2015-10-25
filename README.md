@@ -37,7 +37,7 @@ JQuery is sometimes donated by using the $ sign. JQuery contains functions which
      console.log(data); //Output less specific data to the console
 });
 ```
-### _**Entering the site**_ 
+### 1. _**Entering the site**_ 
 On entering the site, if your a member you may need to provide some authentication details. The following is an example
 
  ```
