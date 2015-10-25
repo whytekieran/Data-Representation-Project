@@ -73,7 +73,7 @@ An example of the json response would be:
  ```json
     [{"NAME": "Renmore Park", 
     "LOCATION": "Renmore, Galway",
-    "AREA": "City-East"
+    "AREA": "City-East",
     "FACILITIES": ["2 Gaelic Playing Pitches, 2 Soccer Playing Pitches", "Planting areas with flowers, shrubs, trees"], 
     "OPENING HOURS": "No restricted opening hours"}]
  ```
