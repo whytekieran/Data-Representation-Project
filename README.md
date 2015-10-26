@@ -3,6 +3,7 @@
 **Student:** Ciaran Whyte </br>
 **Student ID:** G00254624 </br>
 **Module:** Data Representation and Querying </br>
+**Lecturer:** Ian Mcloughlin </br>
 
 
 ## _**Introduction**_
