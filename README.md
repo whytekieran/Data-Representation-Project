@@ -81,7 +81,7 @@ An example of the json response would be:
 ### 3. _**List of available parks by city location**_
 The following URL provides a list of all the Galway parks in a given location. This provides a more specific search than the previous and is based on locations in the city.
 
-**_THE URL:_** *galwayparks.com/location/(location)* </br>
+**_THE URL:_** *```http://galwayparks.com/location/(location)```* </br>
 The (location) represents the part of the URL being replaced depending on the location data that is being provided in the URL.
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
