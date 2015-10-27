@@ -50,12 +50,12 @@ On entering the site, if your a member you may need to provide some authenticati
 ### 2. _**List of available parks by general city area (East, West etc)**_
 The following URL provides a list of all the Galway parks in a general area. People dont always know the names of their specific sourrounding areas. This allows for a general search.
 
-**_THE URL:_** *galwayparks.com/area/(area)* </br>
+**_THE URL:_** *```http://galwayparks.com/area/[:area]```* </br>
 The (area) represents the part of the URL being replaced depending on which area is provided.
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
-**_EXAMPLE:_** galwayparks.com/area/(east) </br>
+**_EXAMPLE:_** *```http://galwayparks.com/area/east```* </br>
 This would return a list of of all the parks in galway city that are located in the east of the city, along with some other 
 useful information.
 
@@ -81,12 +81,12 @@ An example of the json response would be:
 ### 3. _**List of available parks by city location**_
 The following URL provides a list of all the Galway parks in a given location. This provides a more specific search than the previous and is based on locations in the city.
 
-**_THE URL:_** *```http://galwayparks.com/location/(location)```* </br>
+**_THE URL:_** *```http://galwayparks.com/location/[:location]```* </br>
 The (location) represents the part of the URL being replaced depending on the location data that is being provided in the URL.
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
-**_EXAMPLE:_** galwayparks.com/location/(Shantalla) </br>
+**_EXAMPLE:_** *```http://galwayparks.com/location/Shantalla```* </br>
 This would return a list of of all the parks in galway city that are located in Shantalla, along with some other 
 useful information.
 
@@ -110,12 +110,12 @@ An example of the json response would be:
 ### 4. _**List of available parks by the facilities they possess**_
 The following URL provides a list of all the parks depending on the facilities the have.
 
-**_THE URL:_** *galwayparks.com/facilities/(facilities)* </br>
+**_THE URL:_** *```http://galwayparks.com/facilities/[:facilities]```* </br>
 The (facilities) represents the part of the URL being replaced depending on which information is provided.
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
-**_EXAMPLE:_** galwayparks.com/facilities/(tenniscourts) </br>
+**_EXAMPLE:_** *```http://galwayparks.com/facilities/tenniscourts```* </br>
 This will return a list of of all the parks in galway city that have tennis courts, along with other data.
 
       **PROPERTY** | **DESCRIPTION**
