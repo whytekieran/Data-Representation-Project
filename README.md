@@ -24,19 +24,35 @@ DELETE | Deletes the data at the URI
 
 ## _**The URLs**_
 Much of the Javascript that we write to handle these URLs is written with a library in Javascript we call JQuery.
-JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example,
+JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example.
  
 ```javascript
  var url = "urlWithSomething/file/someData";
   $.get( url, function(data1){ //We can use JQuery.get() to retrieve data from the URL
-    var url1 = "urlWithSomethingMoreSpecific/file/someData";
+    var url1 = "urlWithSomethingMoreSpecific/file/data1";
      $.get(url1, function(data2){ //Inner .get() on more specific URL
        console.log(data2.attribute);//Output the data to the console, the data can come in many different models, eg XML,JSON
-        $('#hn').html(data2.attribute); //Using another JQuery method .html() to get a handle on a DOM object
+        $('#id').html(data2.attribute); //Using another JQuery method .html() to get a handle on a DOM object
      });
-     console.log(data); //Output less specific data to the console
+     console.log(data1); //Output less specific data to the console
 });
 ```
+
+This function uses the get() method from the JQuery library. It retrieves a URL and the data it contains. These methods are nested inside one another. We use the first get() method to grab data from the URL which could be something general like all the parks ID numbers. Then using the nested get() method we can pass in the URL containing more specific data. This could be the name of the park, its location etc. 
+
+If we had many parks which is most likely, then we will have many ID numbers. So to get information about every park we could loop through the data supplied from the function inside the first get() like the following:
+
+```javascript
+   for(var i = 0; i < 5; ++i)
+   {
+     var url2 = "urlWithSomethingMoreSpecific/file/data1[i]";
+      $.get(url2,function(data2){ //Inner .get() on more specific URL
+        $('#id').html(data2.attribute); //Using another JQuery method .html() to get a handle on a DOM object
+     });
+    }
+ ```
+ This for loop would go inside your first get method and could be used to loop over every parks id and then get more specific information about each park.
+
 ### 1. _**Entering the site**_ 
 On entering the site, if your a member you may need to provide some authentication details. The following is an example
 
