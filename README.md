@@ -51,7 +51,7 @@ On entering the site, if your a member you may need to provide some authenticati
 The following URL provides a list of all the Galway parks in a general area. People dont always know the names of their specific sourrounding areas. This allows for a general search.
 
 **_THE URL:_** *```http://galwayparks.com/area/[:area]```* </br>
-The (area) represents the part of the URL being replaced depending on which area is provided.
+The [:area] represents the part of the URL being replaced depending on which area is provided.
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
@@ -82,7 +82,7 @@ An example of the json response would be:
 The following URL provides a list of all the Galway parks in a given location. This provides a more specific search than the previous and is based on locations in the city.
 
 **_THE URL:_** *```http://galwayparks.com/location/[:location]```* </br>
-The (location) represents the part of the URL being replaced depending on the location data that is being provided in the URL.
+The [:location] represents the part of the URL being replaced depending on the location data that is being provided in the URL.
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
@@ -111,7 +111,7 @@ An example of the json response would be:
 The following URL provides a list of all the parks depending on the facilities the have.
 
 **_THE URL:_** *```http://galwayparks.com/facilities/[:facilities]```* </br>
-The (facilities) represents the part of the URL being replaced depending on which information is provided.
+The [:facilities] represents the part of the URL being replaced depending on which information is provided.
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
