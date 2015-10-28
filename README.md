@@ -60,6 +60,7 @@ On entering the site, if your a member you may need to provide some authenticati
 
  ```
    POST /entry/login_form HTTP/1.1
+   User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
    Host: GalwayParks.com
    user=Mark&password=enter123
  ```
@@ -158,9 +159,12 @@ There may be a time when a new park is built in Galway. If this occurs the admin
 
 **_THE URL:_** *```http://galwayparks.com/newpark/```* </br>
 
+The code below is an example of the massage body sent by the HTTP POST method. As you can see the values are inside quotes, this isnt mandatory. In place of the spaces between the words inside these quotes we will get a % symbol which is produced by HTML. We can then search for the % symbol when we want to split these words apart and do some processing with them. 
+
  ```
    POST /addpark/newpark_form HTTP/1.1
+   User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
    Host: GalwayParks.com
-   parkname=GalwayPark&location=MainSt&cityarea=City-West&openinghours=norestrictedhours&facilities=TennisCourts,BasketballCourts&description=localneighbourhoodpark
+   parkname="Galway Park"&location="Main St"&cityarea="City-West"&openinghours="No restricted hours"&facilities="TennisCourts BasketballCourts"&description="Local neighbourhood park"
  ```
 **_METHOD:_** POST (The HTTP POST method is used for sending this information. The last line refers to the information we are sending. This information is sensitive, when we are adding a new park on the administrative side we do not want this information to be inside the URL like in the HTTP GET method. If it was everybody could see it. Therefore for security reasons we use the HTTP POST method)
