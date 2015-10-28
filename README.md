@@ -56,7 +56,11 @@ If we had many parks which is most likely, then we will have many ID numbers. So
 ### _**The Client Side URLs**_
 
 #### 1. _**Entering the site**_ 
-On entering the site, if your a member you may need to provide some authentication details. The following is an example
+On entering the site, if your a member you may need to provide some authentication details. The following is an example of the URL
+
+**_THE URL:_** *```http://galwayparks.com/login/```* </br>
+
+The code below is an example of the massage body sent by the HTTP POST method.  
 
  ```
    POST /entry/login_form HTTP/1.1
