@@ -24,7 +24,7 @@ DELETE | Deletes the data at the URI
 
 ## _**Handling the URLs**_
 Much of the Javascript that we write to handle these URLs is written with a library in Javascript we call JQuery.
-JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example.
+JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example using the JQuery get() method to retrieve data in a URL.
  
 ```javascript
  var url = "urlWithSomething/file/someData";
