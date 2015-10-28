@@ -58,7 +58,7 @@ If we had many parks which is most likely, then we will have many ID numbers. So
 #### 1. _**Entering the site**_ 
 On entering the site, if your a member you may need to provide some authentication details. The following is an example of the URL
 
-**_THE URL:_** *```http://galwayparks.com/login/```* </br>
+**_THE URL:_** *```http://galwayparks.com/login```* </br>
 
 The code below is an example of the massage body sent by the HTTP POST method.  
 
