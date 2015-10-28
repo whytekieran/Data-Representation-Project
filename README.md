@@ -38,9 +38,9 @@ JQuery is sometimes donated by using the $ sign. JQuery contains functions which
 });
 ```
 
-This function uses the get() method from the JQuery library. It retrieves a URL and the data it contains. These methods are nested inside one another. We use the first get() method to grab data from the URL which could be something general like all the parks ID numbers. Then using the nested get() method we can pass in the URL containing more specific data. This could be the name of the park, its location etc. 
+This function uses the get() method from the JQuery library. It retrieves a URL and the data it contains. These get() methods are nested inside one another. We use the first get() method to grab data from the URL which could be something general like all the parks ID numbers. Then using the nested get() method we can pass in the URL containing more specific data. This could be the name of the park, its location etc. 
 
-If we had many parks which is most likely, then we will have many ID numbers. So to get information about every park we could loop through the data supplied from the function inside the first get() method like the following:
+If we had many parks which is most likely, then we will have many ID numbers. So to get information about every park we could loop through the data supplied from the anonymous function inside the first get() method like the following:
 
 ```javascript
    for(var i = 0; i < 5; ++i)
@@ -88,7 +88,7 @@ The data returned from this URL will be in JSON (Javascript Object Notation) for
       ------------ | -------------
        NAME | The name of the park.
        LOCATION | The location of the park, contains information like the street name.
-       AREA | The area of the city in which te park is located
+       AREA | The area of the city in which the park is located
        FACILITIES | The different facilities that are available at the park
        OPENING HOURS | The opening hours for the park
 
