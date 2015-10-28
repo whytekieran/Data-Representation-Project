@@ -173,6 +173,6 @@ The code below is an example of the massage body sent by the HTTP POST method. A
  ```
 **_METHOD:_** POST (The HTTP POST method is used for sending this information. The last line refers to the information we are sending. This information is sensitive, when we are adding a new park on the administrative side we do not want this information to be inside the URL like in the HTTP GET method. If it was everybody could see it. Therefore for security reasons we use the HTTP POST method)
 
-#### 1. _**Deleting a park from the dataset**_ 
+#### 2. _**Deleting a park from the dataset**_ 
 Just as there may be parks built in Galway city there may also be parks that are being removed, for example a park may be taken down and housing built in its place. In this situation the administator may want to remove a park from the dataset.
 The following is an example of a URL to delete a park from the dataset.
