@@ -59,7 +59,7 @@ If we had many parks which is most likely, then we will have many ID numbers. So
 On entering the site, if your a member you may need to provide some authentication details. The following is an example
 
  ```
-   POST /entry/login_form.htm HTTP/1.1
+   POST /entry/login_form HTTP/1.1
    Host: GalwayParks.com
    user=Mark&password=enter123
  ```
@@ -151,3 +151,16 @@ An example of the json response would be:
  
  The code above is an example of a single json object (park) returned by the URL. We can have many of these objects, each of these objects can then be stored inside another json object. This makes json a very powerful language in data transfer.
 
+### _**Administrative URLs**_
+
+#### 1. _**Adding a new park to the dataset**_ 
+There may be a time when a new park is built in Galway. If this occurs the administrators of the site should be able to add that new park to the dataset. The following is an example of the URL
+
+**_THE URL:_** *```http://galwayparks.com/newpark/```* </br>
+
+ ```
+   POST /addpark/newpark_form HTTP/1.1
+   Host: GalwayParks.com
+   parkname=GalwayPark&location=MainSt&cityarea=City-West&openinghours=norestrictedhours&facilities=TennisCourts,BasketballCourts&description=localneighbourhoodpark
+ ```
+**_METHOD:_** POST (The HTTP POST method is used for sending this information. The last line refers to the information we are sending. This information is sensitive, when we are adding a new park on the administrative side we do not want this information to be inside the URL like in the HTTP GET method. If it was everybody could see it. Therefore for security reasons we use the HTTP POST method)
