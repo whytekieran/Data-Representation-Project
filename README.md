@@ -180,4 +180,4 @@ The following is an example of a URL to delete a park from the dataset.
 **_THE URL:_** *```http://galwayparks.com/removepark/[:id]```* </br>
 The [:id] represents the part of the URL being replaced depending on which id is provided for a particular park.
 
-**_METHOD:_** DELETE (add brief decription)
+**_METHOD:_** DELETE (The HTTP DELETE method is used for deleting this information from the dataset)
