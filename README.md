@@ -173,11 +173,34 @@ The code below is an example of the massage body sent by the HTTP POST method. A
  ```
 **_METHOD:_** POST (The HTTP POST method is used for sending this information. The last line refers to the information we are sending. This information is sensitive, when we are adding a new park on the administrative side we do not want this information to be inside the URL like in the HTTP GET method. If it was everybody could see it. Therefore for security reasons we use the HTTP POST method)
 
-#### 2. _**Deleting a park from the dataset**_ 
+#### 2. _**List all the parks in the dataset**_
+The following URL provides a list of all the Galway parks contained in the dataset and their unique ID's. On the client side getting the parks ID may not be very important, but being able to view a parks unique ID may be very useful from an administrative point of view. An example may be if we want to remove a specific park. We could then use the ID to specify which park we want to remove.
+
+**_THE URL:_** *```http://galwayparks.com/parks/```* </br>
+
+**_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
+
+      **PROPERTY** | **DESCRIPTION**
+      ------------ | ------------
+       NUMBER | The unique ID given to the park
+       NAME | The name of the park
+       LOCATION| The location of the park, contains information like the street name.
+
+An example of the json response would be:
+ ```json
+    [{"NUMBER": "5",
+    "NAME": "Salthill Park", 
+    "LOCATION": "Salthill, Galway"}]
+```
+
+#### 3. _**Deleting a park from the dataset**_ 
 Just as there may be parks built in Galway city there may also be parks that are being removed, for example a park may be taken down and housing built in its place. In this situation the administator may want to remove a park from the dataset.
 The following is an example of a URL to delete a park from the dataset.
 
 **_THE URL:_** *```http://galwayparks.com/removepark/[:id]```* </br>
 The [:id] represents the part of the URL being replaced depending on which id is provided for a particular park.
 
-**_METHOD:_** DELETE (The HTTP DELETE method is used for deleting this information from the dataset)
+**_METHOD:_** DELETE (The HTTP DELETE method is used for deleting certain information from the dataset)
+
+**_EXAMPLE:_** *```http://galwayparks.com/removepark/1```* </br>
+This URL would be used to remove the park with an ID of 1, every park in the dataset has a unique ID that we use to identify it. In relational databases we would refer to this ID as a primary key. This URL would not retrieve any data, simply remove the data we specify. 
