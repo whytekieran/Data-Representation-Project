@@ -161,7 +161,7 @@ An example of the json response would be:
 #### 1. _**Adding a new park to the dataset**_ 
 There may be a time when a new park is built in Galway. If this occurs the administrators of the site should be able to add that new park to the dataset. The following is an example of the URL to add a new park.
 
-**_THE URL:_** *```http://galwayparks.com/newpark/```* </br>
+**_THE URL:_** *```http://galwayparks.com/newpark```* </br>
 
 The code below is an example of the massage body sent by the HTTP POST method. As you can see the values are inside quotes, this isnt mandatory. In place of the spaces between the words inside these quotes we will get a % symbol which is produced by HTML. We can then search for the % symbol when we want to split these words apart and do some processing with them. 
 
