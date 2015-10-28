@@ -22,7 +22,7 @@ HEAD | The HEAD method is very similar to the GET method in what it does. The ma
 PUT | Sets the data in the URI to that of the requested data
 DELETE | Deletes the data at the URI
 
-## _**The URLs**_
+## _**Handling the URLs**_
 Much of the Javascript that we write to handle these URLs is written with a library in Javascript we call JQuery.
 JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example.
  
@@ -53,7 +53,7 @@ If we had many parks which is most likely, then we will have many ID numbers. So
  ```
  This for loop would go inside your first get() method and could be used to loop over every parks id and then get more specific information about each park.
  
-### _**Client Side URLs**_
+### _**The Client Side URLs**_
 
 #### 1. _**Entering the site**_ 
 On entering the site, if your a member you may need to provide some authentication details. The following is an example
@@ -152,7 +152,7 @@ An example of the json response would be:
  
  The code above is an example of a single json object (park) returned by the URL. We can have many of these objects, each of these objects can then be stored inside another json object. This makes json a very powerful language in data transfer.
 
-### _**Administrative URLs**_
+### _**The Administrative URLs**_
 
 #### 1. _**Adding a new park to the dataset**_ 
 There may be a time when a new park is built in Galway. If this occurs the administrators of the site should be able to add that new park to the dataset. The following is an example of the URL
