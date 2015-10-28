@@ -176,3 +176,6 @@ The code below is an example of the massage body sent by the HTTP POST method. A
 #### 2. _**Deleting a park from the dataset**_ 
 Just as there may be parks built in Galway city there may also be parks that are being removed, for example a park may be taken down and housing built in its place. In this situation the administator may want to remove a park from the dataset.
 The following is an example of a URL to delete a park from the dataset.
+
+**_THE URL:_** *```http://galwayparks.com/removepark/[:id]```* </br>
+The [:id] represents the part of the URL being replaced depending on which id is provided for a particular park.
