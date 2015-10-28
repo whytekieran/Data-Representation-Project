@@ -176,7 +176,7 @@ The code below is an example of the massage body sent by the HTTP POST method. A
 #### 2. _**List all the parks in the dataset**_
 The following URL provides a list of all the Galway parks contained in the dataset and their unique ID's. On the client side getting the parks ID may not be very important, but being able to view a parks unique ID may be very useful from an administrative point of view. An example may be if we want to remove a specific park. We could then use the ID to specify which park we want to remove.
 
-**_THE URL:_** *```http://galwayparks.com/parks/```* </br>
+**_THE URL:_** *```http://galwayparks.com/parks```* </br>
 
 **_METHOD:_** GET (The HTTP GET method is used for retrieving this information)
 
