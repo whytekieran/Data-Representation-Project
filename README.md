@@ -16,11 +16,11 @@ The data set i will be using contains data about the variety of public parks loc
 
 **HTTP METHOD** | **DESCRIPTION**
 ------------ | -------------
-GET | The GET method means retrieve whatever information is identified by the Request-URI. If the Request-URI refers to a data-producing process the produced data will be returned as the object in the response.
+GET | The GET method means retrieve whatever information is identified by the Request-URL. If the Request-URL refers to a data-producing process the produced data will be returned as the object in the response.
 POST | The POST method is used to send data to the server. The actual function that the POST method performs is determined by the server and is most likely dependent on the URL.
 HEAD | The HEAD method is very similar to the GET method in what it does. The main difference being it only returns the response header.
-PUT | Sets the data in the URI to that of the requested data
-DELETE | Deletes the data at the URI
+PUT | Sets the data in the URL to that of the requested data
+DELETE | Deletes the data specified in the URL
 
 ## _**Handling the URLs**_
 Much of the Javascript that we write to handle these URLs is written with a library in Javascript we call JQuery.
