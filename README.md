@@ -204,3 +204,6 @@ The [:id] represents the part of the URL being replaced depending on which id is
 
 **_EXAMPLE:_** *```http://galwayparks.com/removepark/1```* </br>
 This URL would be used to remove the park with an ID of 1, every park in the dataset has a unique ID that we use to identify it. In relational databases we would refer to this ID as a primary key. This URL would not retrieve any data, simply remove the data we specify. 
+
+### _**Closing Statements**_
+As you can see above we have provided sample URLs for both the client side and administrative side of the application. I personally believe that an application like above would promote healthy living and hopefully encourage people to get out and excercise by providing them with the local services that are availible to them.
