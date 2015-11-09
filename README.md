@@ -215,6 +215,7 @@ There are many ways that a delete request could be handled on the server side. O
      //do stuff, delete the park with ID of 1
 });
 ```
+This code would correspond to the URL for the HTTP DELETE method shown above in the example URL.
 
 ### _**Closing Statements**_
 As you can see above we have provided sample URLs for both the client side and administrative side of the application. I personally believe that an application like above would promote healthy living and hopefully encourage people to get out and excercise by providing them with the local services that are availible to them.
