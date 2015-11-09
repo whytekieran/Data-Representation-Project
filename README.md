@@ -212,7 +212,8 @@ There are many ways that a delete request could be handled on the server side. O
     var app = express();
     
     app.delete('/1', function (req, res) {
-     //do stuff, delete the park with ID of 1
+     //Do stuff, delete the park with ID of 1, gets the value of one from the URL
+     //This data could be in a relational database.
 });
 ```
 This code would correspond to the URL for the HTTP DELETE method shown above in the example URL.
