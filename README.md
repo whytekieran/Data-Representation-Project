@@ -23,10 +23,12 @@ PUT | Sets the data in the URL to that of the requested data
 DELETE | Deletes the data specified in the URL
 
 ## _**Handling the URLs**_
-Much of the Javascript that we write to handle these URLs is written with a library in Javascript we call JQuery.
+Much of the Javascript that we write to handle these URLs can be written with a special library in Javascript we call JQuery.
 JQuery is sometimes donated by using the $ sign. JQuery contains functions which allow us to work with a URL. Here is a general example using the JQuery get() method to retrieve data in a URL.
  
-```javascript
+```
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>//We need to import the JQuery Library
+
  var url = "urlWithSomething/file/someData";
   $.get( url, function(data1){ //We can use JQuery.get() to retrieve data from the URL
     var url1 = "urlWithSomethingMoreSpecific/file/data1";
@@ -51,7 +53,8 @@ If we had many parks which is most likely, then we will have many ID numbers. So
      });
     }
  ```
- This for loop would go inside your first get() method and could be used to loop over every parks id and then get more specific information about each park.
+ This for loop would go inside your first get() method and could be used to loop over every parks id and then get more specific information about each park. JQuery us a very useful library when creating HTTP API's providing a quick and efficient way to retrieve useful data from a URL. More information about JQuery can be found at their website [JQuery.com] (https://jquery.com)
+JQuery is just one way we can grab data from a URL, another way is to use Node.js which is also based on javascript. We can build web servers quickly and easily using Node.js or even better we can use Node Express which a web framework created for Node.js. Later in this documentation we will show some examples of how we can use Node Express to work with data in URLs.
  
 ### _**The Client Side URLs**_
 
@@ -193,6 +196,24 @@ An example of the json response would be:
     "LOCATION": "Salthill, Galway"}]
 ```
 
+Earlier in this documentation we showed how JQuery can be used and briefly discussed Node Express, here we will show an example of how Node Express can be used to get data from the URL described above.
+
+ ```
+   //Creates an Express application. The express() function is a top-level function exported by the express module.
+    var express = require('express');
+    var app = express();
+    
+    //Listening for a particular URL and HTTP GET method. If URL format is something like GalwayParks/parks then
+    //the anonymous function would execute
+    app.get('/parks', function (req, res) {
+     //Do stuff, gets all the parks in the dataset
+     //This data could be in a relational database.
+});
+
+var server = app.listen(80); //Listen on port 80
+```
+This code would correspond to the URL for the previous HTTP GET method shown above in the example URL
+
 #### 3. _**Deleting a park from the dataset**_ 
 Just as there may be parks built in Galway city there may also be parks that are being removed, for example a park may be taken down and housing built in its place. In this situation the administator may want to remove a park from the dataset.
 The following is an example of a URL to delete a park from the dataset.
@@ -205,7 +226,7 @@ The [:id] represents the part of the URL being replaced depending on which id is
 **_EXAMPLE:_** *```http://galwayparks.com/removepark/1```* </br>
 This URL would be used to remove the park with an ID of 1, every park in the dataset has a unique ID that we use to identify it. In relational databases we would refer to this ID as a primary key. This URL would not retrieve any data, simply remove the data we specify. 
 
-There are many ways that a delete request could be handled on the server side. One way is to use node express. Using express i can specify what to do when using a HTTP delete method and if this method gets a specific url. Below is an example of the possible server side code.
+Here is another example using Node Express. Using Express we can specify what to do when using a HTTP DELETE method and if this method gets a specific url. Below is an example of the possible server side code.
 
  ```
     var express = require('express');
@@ -215,6 +236,8 @@ There are many ways that a delete request could be handled on the server side. O
      //Do stuff, delete the park with ID of 1, gets the value of one from the URL
      //This data could be in a relational database.
 });
+
+var server = app.listen(80); //Listen on port 80
 ```
 This code would correspond to the URL for the HTTP DELETE method shown above in the example URL.
 
