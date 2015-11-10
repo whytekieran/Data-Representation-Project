@@ -53,7 +53,7 @@ If we had many parks which is most likely, then we will have many ID numbers. So
      });
     }
  ```
- This for loop would go inside your first get() method and could be used to loop over every parks id and then get more specific information about each park. JQuery us a very useful library when creating HTTP API's providing a quick and efficient way to retrieve useful data from a URL. More information about JQuery can be found at their website [JQuery.com] (https://jquery.com) <br/>
+ This for loop would go inside your first get() method and could be used to loop over every parks id and then get more specific information about each park. JQuery us a very useful library when creating HTTP API's providing a quick and efficient way to retrieve useful data from a URL. More information about JQuery and their documentation can be found at their website [JQuery.com] (https://jquery.com) <br/>
 JQuery is just one way we can grab data from a URL, another way is to use Node.js which is also based on javascript. We can build web servers quickly and easily using Node.js or even better we can use Node Express which a web framework created for Node.js. Later in this documentation we will show some examples of how we can use Node Express to work with data in URLs.
  
 ### _**The Client Side URLs**_
@@ -196,7 +196,7 @@ An example of the json response would be:
     "LOCATION": "Salthill, Galway"}]
 ```
 
-Earlier in this documentation we showed how JQuery can be used and briefly discussed Node Express, here we will show an example of how Node Express can be used to retrieve data depending on the URL described above.
+Earlier in this documentation we showed how JQuery can be used and briefly discussed Node Express, here we will show an example of how Node Express can be used to retrieve data depending on the URL described above. If you wish to learn more about Node Express and its capabilities you can visit their website [Node Express] (http://expressjs.com)
 
  ```
    //Creates an Express application. The express() function is a top-level function exported by the express module.
