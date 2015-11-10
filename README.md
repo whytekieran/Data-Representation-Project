@@ -196,7 +196,7 @@ An example of the json response would be:
     "LOCATION": "Salthill, Galway"}]
 ```
 
-Earlier in this documentation we showed how JQuery can be used and briefly discussed Node Express, here we will show an example of how Node Express can be used to get data from the URL described above.
+Earlier in this documentation we showed how JQuery can be used and briefly discussed Node Express, here we will show an example of how Node Express can be used to retrieve data depending on the URL described above.
 
  ```
    //Creates an Express application. The express() function is a top-level function exported by the express module.
