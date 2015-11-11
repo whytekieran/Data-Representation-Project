@@ -4,6 +4,7 @@
 **Module:** Data Representation and Querying </br>
 **Lecturer:** Ian Mcloughlin </br>
 
+//Comment explain differance between silent / and parameterized ? GET
 
 ## _**Introduction**_
 
