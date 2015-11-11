@@ -4,8 +4,6 @@
 **Module:** Data Representation and Querying </br>
 **Lecturer:** Ian Mcloughlin </br>
 
-//Comment explain differance between silent / and parameterized ? GET
-
 ## _**Introduction**_
 
 This project was designed as part of a Data Representation module. In the project I have to design an API for a data set, not implement it. I will be designing the URLs for querying a particular data set for useful information, keeping in mind the needs of the users that will use the API. These datasets are located at [Data.Gov.ie] (https://data.gov.ie/data) The API will be provided through HTTP. Each of the URLs will be described in detail explaining certain points like what kind of data will be returned from the URL and what kind of HTTP method(s) are being used.
@@ -17,7 +15,7 @@ The data set i will be using contains data about the variety of public parks loc
 
 **HTTP METHOD** | **DESCRIPTION**
 ------------ | -------------
-GET | The GET method means retrieve whatever information is identified by the Request-URL. If the Request-URL refers to a data-producing process the produced data will be returned as the object in the response.
+GET | The GET method means retrieve whatever information is identified by the Request-URL. If the Request-URL refers to a data-producing process the produced data will be returned as the object in the response. An interesting not about the GET method is that it can be bot a silent GET method or a parameterized GET. All the examples in this documentation use the silent version of get (/[:SomeSearchData]) and this version is becoming increasingly more common today. The parametized version has a structure like this /parks/parks_form?key1=value1&key2=value2.
 POST | The POST method is used to send data to the server. The actual function that the POST method performs is determined by the server and is most likely dependent on the URL.
 HEAD | The HEAD method is very similar to the GET method in what it does. The main difference being it only returns the response header.
 PUT | Sets the data in the URL to that of the requested data. PUT will put a file or resource at a specific URL. If there is a file or resource already at the URL, PUT replaces that file or resource. If there is no file or resource there, PUT creates one
