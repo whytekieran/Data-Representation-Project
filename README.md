@@ -9,7 +9,19 @@
 This project was designed as part of a Data Representation module. In the project I have to design an API for a data set, not implement it. I will be designing the URLs for querying a particular data set for useful information, keeping in mind the needs of the users that will use the API. These datasets are located at [Data.Gov.ie] (https://data.gov.ie/data) The API will be provided through HTTP. Each of the URLs will be described in detail explaining certain points like what kind of data will be returned from the URL and what kind of HTTP method(s) are being used.
 
 ## _**The Data Set**_
-The data set i will be using contains data about the variety of public parks located around Galway city. Exercise is vital today for good health from both a physical and mental perspective. Therefore i find it very important that people should be aware of the different facilities they have in their local area. Currently this data set contains data for all the parks in Galway city but this could be expanded to contain all the parks in the county, province or country. It also would not have to just be for parks, it could also contain gyms, sport pitches etc. The main concept of this being all about exercise and awareness of public facilities. The data set contains different information about each park. It is in CSV file format and has 29 rows, each row contains values such as the parks name, location, geograpic location, its facilities and more. If you wish to view the actual dataset you can download it here: [Parks In Galway City] (http://opendata.galwaycity.opendata.arcgis.com/datasets/683ff500430447c985f4775a6b5dd112_0.csv)
+The data set i will be using contains data about the variety of public parks located around Galway city. Exercise is vital today for good health from both a physical and mental perspective. Therefore i find it very important that people should be aware of the different facilities they have in their local area. Currently this data set contains data for all the parks in Galway city but this could be expanded to contain all the parks in the county, province or country. It also would not have to just be for parks, it could also contain gyms, sport pitches etc. The main concept of this being all about exercise and awareness of public facilities. The data set contains different information about each park. It is in CSV file format and has 29 rows, each row contains values for a differant park. If you wish to view the actual dataset you can download it here: [Parks In Galway City] (http://opendata.galwaycity.opendata.arcgis.com/datasets/683ff500430447c985f4775a6b5dd112_0.csv)
+
+**FIELD** | **DESCRIPTION**
+------------ | -------------
+ObjectID | The object id of the park
+Number | The parks unique number
+Name | The name of the park
+Location | The location of the park
+AreaOfCity | The area of the city the park is in (east, west, etc)
+OpeningHRs | The opening hours of the park
+Facilities | The facilities available in the park
+Description | Give a general description of the park.
+Latitude | Longitude describes the Y
 
 ## _**Common HTTP Methods and a brief description**_
 
