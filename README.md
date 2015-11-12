@@ -21,7 +21,12 @@ AreaOfCity | The area of the city the park is in (east, west, etc)
 OpeningHRs | The opening hours of the park
 Facilities | The facilities available in the park
 Description | Give a general description of the park.
-Latitude | Longitude describes the Y
+Latitude | Latitude describes the Y co-ordinate of the park on a map.
+Longitude | Longitude describes the X co-ordinate of the park on a map.
+EastITM | Gives the EastITM of the park.
+NorthITM | Gives the NorthITM of the park.
+EastIG | Gives the EastIG of the park.
+NorthIG | Gives the NorthIG of the park.
 
 ## _**Common HTTP Methods and a brief description**_
 
