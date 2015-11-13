@@ -115,11 +115,15 @@ The data returned from this URL will be in JSON (Javascript Object Notation) for
 
 An example of the json response would be:
  ```json
-    [{"NAME": "Renmore Park", 
-    "LOCATION": "Renmore, Galway",
-    "AREA": "City-East",
-    "FACILITIES": ["2 Gaelic Playing Pitches, 2 Soccer Playing Pitches", "Planting areas with flowers, shrubs, trees"], 
-    "OPENING HOURS": "No restricted opening hours"}]
+    [
+     {
+      "NAME": "Renmore Park", 
+      "LOCATION": "Renmore, Galway",
+      "AREA": "City-East",
+      "FACILITIES": ["2 Gaelic Playing Pitches, 2 Soccer Playing Pitches", "Planting areas with flowers, shrubs, trees"], 
+      "OPENING HOURS": "No restricted opening hours"
+     }
+    ]
  ```
 
 #### 3. _**List of available parks by city location**_
