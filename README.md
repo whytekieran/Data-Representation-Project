@@ -73,6 +73,7 @@ If we had many parks which is most likely, then we will have many ID numbers. So
  This for loop would go inside the first get() method that was shown in the previous code example and could be used to loop over every parks id and then get more specific information about each park. JQuery is a very useful library when creating HTTP API's providing a quick and efficient way to retrieve useful data from a URL. More information about JQuery and their documentation can be found at their website [JQuery.com] (https://jquery.com) <br/>
 JQuery is just one way we can grab data from a URL, another way is to use Node.js which is also based on javascript. We can build web servers quickly and easily using Node.js or even better we can use Node Express which a web framework created for Node.js. Later in this documentation we will show some examples of how we can use Node Express to work with data in URLs.
  
+## _**The API's URL's**_
 ### _**The Client Side URLs**_
 
 #### 1. _**Entering the site**_ 
